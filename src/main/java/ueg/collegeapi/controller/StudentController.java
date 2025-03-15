@@ -17,17 +17,17 @@ public class StudentController {
     public List<Student> listAll() {
         Student Student = new Student();
         Student.setId(1L);
-        Student.setName("John");
-        Student.setRegisterNumber("123456");
-        Student.setCourse("Java");
+        Student.setName("Wendel");
+        Student.setRegisterNumber("00001");
+        Student.setCourse("Programação Web I");
         Student.setRegisterDateTime(LocalDateTime.now());
 
         Student Student2 = ueg.collegeapi.model.Student
                 .builder()
                 .id(2L)
-                .name("Peter")
-                .course("Java")
-                .registerNumber("55477")
+                .name("Aluno")
+                .course("Programação Web I")
+                .registerNumber("00002")
                 .registerDateTime(LocalDateTime.now())
                 .build();
 
